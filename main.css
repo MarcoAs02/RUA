@@ -1,0 +1,49 @@
+body {
+    background-color: #000;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .heart-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  i {
+    color: #000;
+    font-size: 100px;
+    text-shadow: 0 0 10px goldenrod, 0 0 50px goldenrod;
+    animation: heartbeat 0.8s infinite;
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: goldenrod; /* Set text color to gold */
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1.10);
+    }
+    30% {
+      transform: scale(1.4);
+    }
+    60% {
+      transform: scale(1.9);
+    }
+  }
+  

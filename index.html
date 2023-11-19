@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="heart-container">
+      <span class="text">SEI BELLISSIMA</span>
+      <div class="heart" onclick="toggleHeartVisibility()">
+        <i class="fa-solid fa-heart"></i>
+      </div>
+    </div>
+
+    <script>
+      const heart = document.querySelector('.heart');
+      let isHeartVisible = true;
+
+      function toggleHeartVisibility() {
+        if (isHeartVisible) {
+          // If the heart is currently visible, hide it
+          heart.style.opacity = 0;
+        } else {
+          // If the heart is currently hidden, show it
+          heart.style.opacity = 1;
+        }
+
+        // Toggle the visibility state
+        isHeartVisible = !isHeartVisible;
+      }
+    </script>
+  </body>
+</html>
+
+
